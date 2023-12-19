@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --padding_all: 0 10%;
+  --flex_direction: row;
+  --lang: inter;
+  --direction: ltr;
+  --text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@font-face {
+  font-family: inter;
+  src: url(component/styles/font/static/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(component/styles/font/vazir-font-v16.1.0/Vazir-Medium.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+    background-color: transparent;
+    border: none !important;
+    outline: none !important;
+    font-family: var(--lang);
+}
+
+@media only screen and (max-width: 1300px) {
+  :root {
+    --padding_all: 0 6%
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 1150px) {
+  :root {
+    --padding_all: 0 3%
   }
 }
+
+/* @media only screen and (max-width: 980px) {
+  :root {
+    --padding_all: 0
+  }
+} */
+

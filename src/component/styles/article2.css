@@ -1,0 +1,387 @@
+.featured {
+    height: 1050px;
+    padding: var(--padding_all);
+    font-family: var(--lang);
+    text-align: var(--text-align);
+    margin-bottom: 100px;
+}
+
+.featured h1 {
+    margin: 50px 0 50px 0;
+    font-size: 40px;
+}
+
+.featured .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.featured .card {
+    border: 2px solid #E4E5E8;
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+    transition: all 0.2s ease-out;
+    text-align: var(--text-align);
+}
+
+.featured .card.active {
+    background: linear-gradient(to left, #fff, #fff6e6 70%);
+}
+
+.featured .cards .card:hover {
+    box-shadow: 15px 15px 25px 0px #000000;
+    transform: translate(-5px, -7px);
+}
+
+.featured .card .tp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 30px 0;
+    font-size: 12px;
+    flex-direction: var(--flex_direction);
+}
+
+.featured .card .tp .time {
+    background-color: #E7F6EA;
+    color: #0BA02C;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.featured .card .damon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+}
+
+.featured .card .damon .save {
+    cursor: pointer;
+}
+
+.featured .card .company {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: var(--flex_direction);
+}
+
+.featured .card .company img {
+    background-color: #EDEFF5;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.featured .card .company .name_loc p {
+    margin: 10px 0 0 0;
+}
+
+.featured .card .company .icon {
+    margin-right: 6px;
+}
+
+.featured .card p,
+span {
+    color: #767F8C;
+}
+
+
+/* mobile */
+.featured .card.mobile {
+    display: none;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+.client {
+    background-color: #f1f2f4;
+    height: 640px;
+    padding: var(--padding_all);
+    font-family: var(--lang);
+    text-align: var(--text-align);
+}
+
+.client h1 {
+    text-align: center;
+    margin: 0 0 50px 0;
+    padding: 100px 0 0 0;
+}
+
+
+
+.client_card {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 22vw;
+    padding: 30px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.client_card .star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.client_card .star .active {
+    color: #FFAA00;
+}
+
+.client_card p {
+    color: #464D61;
+}
+
+.client_card .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client_card .user .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.client .swiper-pagination {
+    top: 340px !important;
+}
+
+
+.client .swiper-pagination .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+}
+
+.client .swiper-pagination .swiper-pagination-bullet {
+    transition: all 0.2s ease-in;
+}
+
+
+
+.client .swiper-wrapper {
+    height: 380px !important;
+}
+
+
+
+
+
+
+
+
+.become {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: var(--padding_all);
+    font-family: var(--lang);
+    text-align: var(--text-align);
+}
+
+.become img {
+    width: 44vw;
+}
+
+
+
+footer {
+    background-color: #18191C;
+    display: flex;
+    gap: 50px;
+    /* align-items: center; */
+    color: #9199A3;
+    height: 380px;
+    padding: var(--padding_all);
+    font-family: var(--lang);
+    padding-top: 130px;
+    position: relative;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    background-color: #767F8C;
+    bottom: 65px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+footer h1,
+footer b {
+    color: #fff;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+footer .one {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+footer .one .team {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .one .team h1 {
+    font-size: 28px;
+}
+
+footer .one span {
+    margin: 15px 0 10px 0;
+}
+
+footer p {
+    margin: 30px 0;
+    position: relative;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+footer p::before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+}
+
+footer p:hover {
+    padding-left: 20px;
+}
+
+footer p:hover::before {
+    /* transform: translateX(0px); */
+    opacity: 1;
+}
+
+footer .social {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #767F8C;
+    gap: 42vw;
+}
+
+footer .social .social_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+footer .social .social_icon .icon {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    footer {
+        gap: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .featured .cards .card,
+    .client .swiper-pagination ,
+    footer .foot_menu ,
+    footer .two h1 {
+        display: none;
+    }
+
+    .featured .card.mobile {
+        display: block;
+    }
+
+    .featured {
+        height: 400px;
+    }
+
+    .client {
+        padding: 0 4%;
+        height: 470px;
+    }
+
+    .client h1 {
+        padding-top: 50px;
+    }
+
+    .client_card {
+        width: 75vw;
+        height: 210px;
+    }
+
+    .become {
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .become img {
+        width: 80vw;
+        margin: 4vw 0;
+    }
+
+    footer {
+        gap: 0;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 40px;
+        height: 330px;
+    }
+
+    footer .two {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .one {
+        width: 70vw;
+    }
+
+    footer .one .team {
+        justify-content: center;
+    }
+
+    footer .one span {
+        font-size: 4vw;
+    }
+
+    footer .social span {
+        font-size: 3vw;
+    }
+
+    footer .social {
+        gap: 15vw;
+        padding-right: 15px;
+    }
+}

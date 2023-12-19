@@ -1,0 +1,477 @@
+.top_navbar {
+    background-color: #F1F2F4;
+    height: 48px;
+    padding: var(--padding_all);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--lang);
+    font-size: 13.5px;
+    flex-direction: var(--flex_direction);
+    z-index: 86;
+}
+
+.top_navbar.fix {
+    position: fixed;
+    top: 0;
+    width: 80%;
+}
+
+.top_navbar .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+    width: 45%;
+}
+
+.top_navbar .menu a {
+    color: #5E6670;
+    position: relative;
+    direction: var(--direction);
+}
+
+.top_navbar .menu a.active , .top_navbar .menu a:hover {
+    color: #0A65CC;
+    
+}
+
+.top_navbar .menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    transition: all 0.2s ease-out;
+    background-color: #fff;
+}
+
+.top_navbar .menu a:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #0A65CC;
+    width: 100%;
+    height: 2px;
+    bottom: -14px;
+}
+
+.top_navbar .menu a.active::before {
+    content: '';
+    position: absolute;
+    background-color: #0A65CC;
+    width: 100%;
+    height: 2px;
+    bottom: -14px;
+}
+
+
+.top_navbar .call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26.5%;
+}
+
+.top_navbar .call .lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_navbar .call .lang img {
+    width: 30px;
+}
+
+.select-box {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    height: 90px;
+    padding: var(--padding_all);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--lang);
+    font-size: 13.5px;
+    flex-direction: var(--flex_direction);
+}
+
+.navbar .logo_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+}
+
+.navbar .logo_search .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+}
+
+.navbar .logo_search .logo .margin_left {
+    margin-left: 20px;
+}
+
+.navbar .logo_search .logo .menu_icon , .navbar .login .mobile_search {
+    display: none;
+    font-size: 22px;
+    color: #282828;
+}
+
+
+.navbar .logo_search .search_box {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #e4e5e8;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    margin-left: 20px;
+    /* flex-direction: var(--flex_direction); */
+
+}
+
+.navbar .logo_search .search_box::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    left: 138px;
+    background-color: #E4E5E8;
+}
+
+.navbar .logo_search .search_box img.flag {
+    width: 24px;
+}
+
+
+.navbar .logo_search .search_box img.search_icon {
+    margin: 0 11px 0 35px;
+}
+
+.navbar .logo_search .search_box input {
+    width: 360px;
+    text-align: var(--text-align);
+}
+
+.navbar .login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: var(--flex_direction); */
+}
+
+.navbar .login a:first-child , .navbar .login a:nth-child(2):hover {
+    border: 2px solid #CEE0F5;
+    color: #0A65CC;
+    border-radius: 3px;
+    padding: 16px 20px !important;
+    font-weight: bolder;
+    transition: all 0.2s ease-out;
+    background-color: #fff;
+}
+
+.navbar .login a:nth-child(2) , .navbar .login a:nth-child(4) , .navbar .login a:first-child:hover {
+    border: 2px solid #0A65CC;
+    color: #fff;
+    background-color: #0A65CC;
+    padding: 16px 15px;
+    border-radius: 3px;
+    font-weight: bolder;
+    margin-left: 20px;
+    transition: all 0.2s ease-out;
+}
+
+.navbar .login a:nth-child(4) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #F1F2F4;
+    height: 700px;
+    padding: var(--padding_all);
+    font-family: var(--lang);
+    padding-top: 105px;
+}
+
+header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+    text-align: var(--direction);
+    margin-bottom: 105px;
+}
+
+header .top .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    direction: var(--direction);
+}
+
+header .top .left h6 {
+    font-size: 56px;
+    width: 88%;
+    margin: 0;
+}
+
+header .top .left p {
+    width: 80%;
+    margin: 35px 0;
+}
+
+
+header .top .left .search_box {
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #e4e5e8;
+    border-radius: 8px;
+    padding: 0 20px 0 35px;
+    margin-bottom: 35px;
+}
+
+header .top .left .search_box input.search {
+    width: 13vw;
+    margin-left: 10px;
+}
+
+header .top .left .search_box input.loc {
+    width: 12vw;
+    margin-left: 10px;
+}
+
+header .top .left .search_box span {
+    width: 2px;
+    height: 30px;
+    background-color: #E4E5E8;
+    margin: 0 15px;
+}
+
+header .top .left .search_box a {
+    border: 2px solid #0A65CC;
+    color: #fff;
+    background-color: #0A65CC;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bolder;
+    transition: all 0.2s ease-out;
+}
+
+header .top .left span {
+    width: 80%;
+}
+
+header .top .left span a {
+    color: #0A65CC;
+}
+
+header .top .right img {
+    width: 30vw;
+}
+
+
+header .benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flex_direction);
+    width: 100%;
+}
+
+header .benefits .benefit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 18.5vw;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-direction: var(--flex_direction);
+}
+
+header .benefits .benefit img {
+    padding: 17px;
+}
+
+header .benefits .benefit .num {
+    line-height: 30px;
+    text-align: var(--text-align);
+}
+
+header .benefits .benefit .num b {
+    font-size: 18px;
+}
+
+header .benefits .benefit .num span {
+    color: #767F8C;
+}
+
+
+/* mobile */
+header .mobile_benefits {
+    display: none;
+}
+
+header .mobile_benefits .benefit {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    gap: 0 2vw;
+    align-items: center;
+}
+
+header .mobile_benefits .benefit img {
+    width: 13vw;
+}
+header .mobile_benefits .benefit .num {
+    font-size: 2.9vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .top_navbar.fix {
+        width: 90%;
+    }
+  }
+  
+@media only screen and (max-width: 1150px) {
+    .top_navbar.fix {
+       width: 94%; 
+    }
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .top_navbar .menu {
+        width: 55%;
+    }
+    .top_navbar .call {
+        width: 30%;
+    }
+    .navbar .logo_search .search_box {
+        padding-right: 0;
+    }
+    header .top .right img {
+        width: 45vw;
+    }
+    header .benefits .benefit {
+        width: 22vw;
+    }
+    .navbar .login a:first-child , .navbar .login a:last-child:hover {
+        padding: 16px 15px !important;
+    }
+    .navbar .login a:last-child , .navbar .login a:first-child:hover {
+        padding: 16px 10px;
+    }
+    .navbar .logo_search .search_box input {
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .top_navbar , .navbar .logo_search .search_box , .logo img , .navbar .login a:nth-child(1) , .navbar .login a:nth-child(2) , header .top .left span , header .top .left p , header .benefits {
+        display: none;
+    }
+    .logo h1 {
+        color: #0A65CC;
+        margin: 0 15px;
+    }
+    .navbar .logo_search .logo .menu_icon , .navbar .login a:nth-child(4) , .navbar .login .mobile_search {
+        display: block;
+    }
+    header .top {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    header {
+        padding-top: 50px;
+    }
+    header .top .left h6 {
+        font-size: 4vw;
+        margin: 20px 10%;
+    }
+    header .top .left .search_box {
+        margin: 0 auto 30px auto;
+    }
+    header .top .left .search_box input.search {
+        width: 22vw;
+    }   
+    header .top .left .search_box input.loc {
+        width: 17vw;
+    }
+    header .top .left .search_box input.loc , header .top .left .search_box img:nth-child(4) {
+        display: none;
+    }
+    header .mobile_benefits {
+        display: block;
+    }
+    header .top .left .search_box input.search {
+        width: 42vw;
+    }
+    header {
+        height: 800px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    header {
+        height: 700px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    header {
+        height: 640px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header {
+        height: 130vw;
+    }
+    header .top .left .search_box {
+        padding-left: 15px;
+    }
+}
